@@ -1,0 +1,19 @@
+@startuml
+package "Entities" #DDD{
+  abstract class User <<abstract>>
+  interface Editable <<Interface>>
+  note left of Comment : Max <b>2</b> levels comments  
+  User <|-- Student
+  User <|-- Monitor
+  User <|-- Professor
+  Editable <|-- Monitor
+  Editable <|-- Professor
+  User "user" -- "comments" Comment
+  Comment "partner"--"child" Comment
+  Comment "comments"--"partner" Version
+  Article "articles"--"author" Professor
+  Article --"actual" Version
+  Article --"versions" Version
+  Editable -- Version
+}
+@enduml

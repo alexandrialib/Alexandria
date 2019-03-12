@@ -1,4 +1,5 @@
 @startuml  
+package knowledgeBase{
   abstract User <<abstract>>
   interface Editable <<Interface>>
   note left of Comment : Max <b>2</b> levels comments  
@@ -16,4 +17,27 @@
   Article --"actual" Version
   Article --"versions" Version
   Editable -- Version
+  }
+  package OnlineEditor{
+    Language -- Intellisense
+    Language -- SyntaxChecker
+    Language -- ReservedWords
+    Text -- Language
+    Editor -- Text
+    Editor -- Location
+    Location <|-- ByWord
+    Location <|-- ByLine
+    Location <|-- ByChar
+    Location -- User
+  }
+  package WhiteBoard{
+    Circle --|> Figure
+    Figure <|-- Square
+    Figure <|-- Line
+    Figure -- Canvas
+    Figure --|> DrawTool
+    Eraser --|> DrawTool
+    ColorChooser --|> DrawTool
+    Pencil --|> DrawTool
+  }
 @enduml

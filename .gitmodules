@@ -1,0 +1,6 @@
+[submodule "Back-End"]
+	path = Back-End
+	url = https://github.com/alexandrialib/BackEnd
+[submodule "Front-End"]
+	path = Front-End
+	url = https://github.com/alexandrialib/FrontEnd

@@ -1,4 +1,85 @@
-@startuml  
+@startuml
+
+------------------------------------ Editor ------------------------------------
+class Editor {
+    - id: String
+    - text: List<String> 
+    - version: AtomicInteger
+    - location: List<ByChar>
+    - lastEdit: LocalDateTime
+    - lastUser: String
+}
+
+abstract class Location {
+    - user: User
+    - row: int 
+    - column: int
+    - range: int[]
+    - editor: Editor
+    +{abstract} getBlockedRange(): int[]
+}
+
+class ByChar {
+    + getBlockedRange(): int[]
+}
+  
+class ByLine {
+    + getBlockedRange(): int[]
+}
+
+class ByWord {
+    + getBlockedRange(): int[]
+}
+
+------------------------------------ knowledgeBase ------------------------------------
+class Article {
+    - tittle: String
+    - content: String 
+    - author: User 
+    - date: LocalDateTime 
+    - comments: List<Comment> 
+    - likes: Set<User>
+    + addComment(comment: Comment): void
+}
+
+class Category {
+    - id: String
+    - name: String 
+    - author: User 
+    - articles: List<Article>
+    + addArticle(article: Article): void
+}
+
+class Comment {
+    - author: User 
+    - content: String  
+    - date: LocalDateTime 
+    - likes: Set<User> 
+}
+
+class Monitor {
+}
+
+abstract class Registration{
+    - creationDate: Date
+}
+
+class Student {
+}
+
+class Teacher {
+}
+
+class User {
+    - id: String
+    - username: String
+    - email: String
+    - name: String
+    - lastName: String
+    - password: String
+    - active: boolean
+    - roles: List<String>
+}
 package knowledgeBase{
   abstract User <<abstract>>
   interface Editable <<Interface>>

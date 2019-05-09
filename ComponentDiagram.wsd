@@ -1,17 +1,31 @@
 @startuml
-note as N1
-    -.-> (needs) is equal to --(
-  end note
-component "Alexandria Lib"{
-  skinparam componentStyle uml2
-  [Front End\n (ReactJS)] as front
-  front ..> KnowledgeBase : needs
-  front ..> Editor : needs
-  [Back End\n (Spring WebFlux)] as back
-  back -- KnowledgeBase
-  back -- Editor
-  back ..> DataAccess : needs
-  [DataBase\n (MongoDB)] as db
-  db --DataAccess
-  }
+
+node Client {
+}
+
+node FrontEnd {
+    node "Session"{
+        [WhiteBoard] --( BoardAPI
+        [TextEditor] --( EditorAPI
+    }
+    [Articles] --( ArticlesAPI
+    [Login/Singup] --( UsersAPI
+}
+
+node BackEnd {
+    BoardAPI - [whiteBoard] 
+    EditorAPI - [textEditor]
+    ArticlesAPI - [articles]
+    UsersAPI - [login/singup]
+}
+
+database MongoDB{
+}
+
+BackEnd --( Driver
+Driver - MongoDB
+
+FrontEnd --( UserInterface
+UserInterface - Client
+
 @enduml

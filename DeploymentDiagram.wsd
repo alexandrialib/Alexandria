@@ -1,0 +1,38 @@
+@startuml
+
+node isEscuelaingServer {
+    node LinuxOS {
+		database MongoDB{
+		}
+	}
+}
+
+node WebBrowser {
+    node JSEngine {
+        node AlexandriaLibFrontEnd
+    }
+}
+
+node BackEndDyno {
+    node JVM {
+		node SpringbootFramework {
+			node AlexandriaLibBackEnd
+		}
+	}
+}
+
+node FrontEndDyno {
+    node VirtualMachine {
+		node JS
+		node HTML
+		node CSS
+	}
+}
+
+
+BackEndDyno -- isEscuelaingServer : SpringData
+WebBrowser -- FrontEndDyno : <<Download>> HTTP
+BackEndDyno -- FrontEndDyno: HTTP
+
+
+@enduml

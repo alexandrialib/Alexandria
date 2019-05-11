@@ -3,29 +3,29 @@
 node Client {
 }
 
-node FrontEnd {
-    node "Session"{
-        [WhiteBoard] --( BoardAPI
-        [TextEditor] --( EditorAPI
-    }
-    [Articles] --( ArticlesAPI
-    [Login/Singup] --( UsersAPI
+node BackEnd {
+    BoardAPI -# [whiteBoard] 
+    EditorAPI -# [textEditor]
+    ArticlesAPI -# [articles]
+    UsersAPI -# [login/singup]
 }
 
-node BackEnd {
-    BoardAPI - [whiteBoard] 
-    EditorAPI - [textEditor]
-    ArticlesAPI - [articles]
-    UsersAPI - [login/singup]
+node FrontEnd {
+    node "Session"{
+        [WhiteBoard] #--( BoardAPI
+        [TextEditor] #--( EditorAPI
+    }
+    [Articles] #--( ArticlesAPI
+    [Login/Singup] #--( UsersAPI
 }
 
 database MongoDB{
 }
 
-BackEnd --( Driver
-Driver - MongoDB
+BackEnd #--( Driver
+Driver -# MongoDB
 
-FrontEnd --( UserInterface
-UserInterface - Client
+FrontEnd #--( UserInterface
+UserInterface -# Client
 
 @enduml

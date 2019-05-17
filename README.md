@@ -1,16 +1,74 @@
 # Alexandria Lib
 ## Descripción
-Alexandria Lib es una base de conocimiento para la comunidad de estudiantes de carreras relacionadas con tecnología, donde la misma comunidad puede compartir lo que sabe y aportar por medio de artículos al crecimiento académico  de los usuarios.
-La aplicación cuenta con tres tipos o roles de usuario, cada uno tiene permisos distintos y funcionalidades a las que puede acceder. Para entrar a la aplicación con un rol en específico es necesario que el usuario se registre o autentique en la plataforma, esto se hace por medio del botón ubicado en la parte superior derecha de la pantalla.
+Alexandria Lib es una base de conocimiento para la comunidad de estudiantes de ingeniería de software y carreras afines, donde la misma comunidad puede compartir lo que sabe y aportar por medio de artículos al crecimiento académico  de los usuarios.
+La aplicación cuenta con dos tipos o roles de usuario, cada uno tiene permisos distintos y funcionalidades a las que puede acceder. Para entrar a la aplicación con un rol en específico es necesario que el usuario se registre o autentique en la plataforma, esto se hace por medio del botón ubicado en la parte superior derecha de la pantalla.
+
   ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/1.png "Login/Register Button")
-Si el usuario escoge la opción de registro "Sign Up", es dirigido a otra pantalla donde debe llenar un formulario con alguna información básica para tener una cuenta dentro de la plataforma. La siguiente imágen muestra la pantalla de registro. Las opciones de registrarse con Github y Google no están en funcionamiento pero se visualizan para futura implementación.
+  
+Si el usuario escoge la opción de registro _"Sign Up"_, es dirigido a otra pantalla donde debe llenar un formulario con alguna información básica para tener una cuenta dentro de la plataforma. La siguiente imágen muestra la pantalla de registro. Las opciones de registrarse con Github y Google no están en funcionamiento pero se visualizan para futura implementación.
+
 ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/2.png "Register View")
 
-Si el usuario escoge la opción de iniciar sesión "Sign In", es dirigido a otra pantalla donde debe ingresar sus credenciales para poder continuar usando la aplicación y las funcionalidades que tiene permitidas según su rol de usuario. Al igual que en la pantalla de registro, las funcionalidades de inicio de sesión con Github y Google están expuestos para futura implementación, pero aún no está en funcionamiento.
+Si el usuario escoge la opción de iniciar sesión _"Sign In"_, es dirigido a otra pantalla donde debe ingresar sus credenciales para poder continuar usando la aplicación y las funcionalidades que tiene permitidas según su rol de usuario. Al igual que en la pantalla de registro, las funcionalidades de inicio de sesión con Github y Google están expuestas para futura implementación, pero aún no están en funcionamiento.
 
 ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/3.png "Login View")
 
- # TODO: poner pantallazos de toda la aplicacion, con la descripcion nde cada pantallazo, y en el code editor poner un GIF con cada 
+Si el usuario decide continuar como **anónimo** puede hacerlo, pero no podrá acceder a la totalidad de las funcionalidades de la aplicación. La primera pantalla a la que tiene acceso es la de inicio o _"Home"_, en esta pantalla puede visualizar un listado de los articulos más populares y los últimos articulos creados. De cada artículo mostrado se puede ver una imagen y una breve descripción.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/4.png "Main View")
+
+En la barra superior de esta pantalla se encuentra la opción _"Categories"_, que permite visualizar un listado de todas las categorias existentes. En la aplicación los articulos están organizados por categorias y estas a su vez contienen otras categorias.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/5.png "Categories View")
+
+Cuando se selecciona una categoría que no tiene subcategorias se pueden ver todos los artículos publicados bajo ese tópico. Al igual que en la pantalla _"Home"_, puedo ver una imagen y una breve descripción del artículo.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/6.png "Articles View")
+
+Seleccionando alguno de los articulos se accede a ellos, en cada artículo se puede ver un título, quién lo publicó y cuándo lo hizo. Adicionalmente, al final de cada artículo hay un espacio para los comentarios.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/7.png "Article View")
+
+La ultima funcionalidad a la que un usuario **anónimo** puede acceder es a la de sesión de monitoría. Cuando el usuario selecciona la opción ubicada en la barra superior, tendrá la opción de unirse a una sesión existente o crear una nueva. Estas sesiones son independientes una de otra, por esta razón las monitorías no se interrumpirán.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/8.png "Session Selection")
+
+Una vez el usuario ingresa a la sesión de moitoría tendrá ciertas opciones. Ya sea por medio de texto/código cooperativo o por medio de un tablero, las monitorías en tiempo real permitiran a los usuarios enseñar o aprender de los temas de los artículos. El editor de texto brinda diversas opciones para facilitar las explicaciones.
+1. La opcion de mostrar por medio de colores las palabras representativas de la sintaxis de distintos lenguajes de programación.
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/9.png "Sintax Colors")
+2. La opción de cambiar el color del editor
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/10.png "Editor Color")
+3. La opción de cambiar el tamaño de la fuente
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/11.png "Font Size")
+
+Adicional a esto, el editor también muestra los errores de sintaxis del lenguaje Javascript.
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/12.png "Javascript Sintax")
+
+El tablero colaborativo también me brinda una gran cantidad de herramientas y opciones.
+1. Cambiar la herramienta de dibujo y agregar texto
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/13.png "Drawing Tools")
+2. Cambiar el tamaño del tablero y eliminar elementos
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/14.png "Drawing Controls")
+3. Elegir el color de los dibujos
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/15.png "Drawing Colors")
+4. Cambiar el color del fondo
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/16.png "Background Color")
+
+Estas sesiones de monitoría se pueden compartir por medio de un link que se obtiene al seleccionar la ultima opcion de la barra de herramientas de la parte superior de la pantalla.
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/17.png "Share Session")
+
+Si el usuario decide entrar como usuario **registrado** podrá acceder algunas funcionalidades más aparte de las previamente expuestas. La página inicial será la misma para todos los roles, por lo cual esta no varía con respecto a la mostrada previamente para el usuario **anónimo**. Este rol tiene una vista propia asignada a su perfil, allí el usuario podrá agregar categorias y articulos, adicionalmente podrá ver algunos artículos populares en la plataforma.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/18.png "Profile View")
+
+Las funcionalidades añadidas de este rol de usuario son la de agregar una categoría y agregar un nuevo artículo a una categoría en específico. Para añadir una nueva categoría solo se necesita suministrar el nombre de la misma.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/19.png "Add Category")
+
+La aplicación me permite agregar los articulos nuevos en formato markdown, para lo cual se facilita un editor de markdown en la plataforma.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/20.png "Add Article")
+
 
 # TODO: Hacer bien el modelo y actualizarlo al estado actual del código
 ## Diagrama de clases

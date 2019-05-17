@@ -2,19 +2,23 @@
 ## Descripción
 Alexandria Lib es una base de conocimiento para la comunidad de estudiantes de carreras relacionadas con tecnología, donde la misma comunidad puede compartir lo que sabe y aportar por medio de artículos al crecimiento académico  de los usuarios.
 La aplicación cuenta con tres tipos o roles de usuario, cada uno tiene permisos distintos y funcionalidades a las que puede acceder. Para entrar a la aplicación con un rol en específico es necesario que el usuario se registre o autentique en la plataforma, esto se hace por medio del botón ubicado en la parte superior derecha de la pantalla.
-  ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/1.png "Login/Register Button")
-Si el usuario escoge la opción de registro "Sign Up", debe llenar un formulario con alguna información básica para tener una cuenta dentro de la plataforma. La siguiente imágen muestra la pantalla de registro. Las opciones de registrarse con Github y Google no están en funcionamiento pero se visualizan para futura implementación.
-![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/1.png "Register View")
+  ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/1.png "Login/Register Button")
+Si el usuario escoge la opción de registro "Sign Up", es dirigido a otra pantalla donde debe llenar un formulario con alguna información básica para tener una cuenta dentro de la plataforma. La siguiente imágen muestra la pantalla de registro. Las opciones de registrarse con Github y Google no están en funcionamiento pero se visualizan para futura implementación.
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/2.png "Register View")
+
+Si el usuario escoge la opción de iniciar sesión "Sign In", es dirigido a otra pantalla donde debe ingresar sus credenciales para poder continuar usando la aplicación y las funcionalidades que tiene permitidas según su rol de usuario. Al igual que en la pantalla de registro, las funcionalidades de inicio de sesión con Github y Google están expuestos para futura implementación, pero aún no está en funcionamiento.
+
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/3.png "Login View")
 
  # TODO: poner pantallazos de toda la aplicacion, con la descripcion nde cada pantallazo, y en el code editor poner un GIF con cada 
 
 # TODO: Hacer bien el modelo y actualizarlo al estado actual del código
 ## Diagrama de clases
-![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/ClassDiagram.png "Class Diagram")
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/ClassDiagram.png "Class Diagram")
 ## Diagrama de componentes
-![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/ComponentDiagram.png "Component Diagram")
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/ComponentDiagram.png "Component Diagram")
 ## Diagrama de despliegue
-![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/DeploymentDiagram.png "Deployment Diagram")
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/DeploymentDiagram.png "Deployment Diagram")
 ## Escenarios de calidad
 # TODO: Poner requisitos minimos de la maquina y los recomenados, poner el entorno general ej: para todos los esenarios el entorno es el siguiewnte: velocidad de internet de minimo xxx: con un navegador actualizado a la ltima versiuomn, 
 ### Estructura

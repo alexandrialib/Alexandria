@@ -86,7 +86,31 @@ La aplicación me permite agregar los articulos nuevos en formato markdown, para
 ## Diagrama de despliegue
 ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/DeploymentDiagram.png "Deployment Diagram")
 ## Escenarios de calidad
-# TODO: Poner requisitos minimos de la maquina y los recomenados, poner el entorno general ej: para todos los esenarios el entorno es el siguiewnte: velocidad de internet de minimo xxx: con un navegador actualizado a la ltima versiuomn, 
+ 
+#### Todos los criterios de calidad estan basados en el siguiente entorno:
+ 
+Los criterios se probaron con los siguientes navegadores (Que son los soportados por ReactJS):
+* Opera
+* Chrome
+* Firefox
+* Safari
+
+ 
+* La maquina debera tener estos requisitos minimos:
+	* Procesador: Intel Core i3 de 1ra generacion.
+	* Ram: Una memoria ram mayor a 4gb
+	* Tarjeta grafica: Minimo una integrada en el procesador
+	* OS: Windows 7, Mac OSX 10.10, Linux kernel 4.1
+	* Velocidad de internet: 5Mbs
+	
+* Recomendados:
+	* Procesador: Intel Core i5 de 4ta generacion o superior.
+	* Ram: 8gb 
+	* Tarjeta grafica dedicada.
+	* OS: Windows 10, Mac OSX 10.14, Linux kernel 4.15
+	* Velocidad de internet: 5Mbs
+	
+
 ### Estructura
 Para identificar los escenarios de calidad se seguirá la siguiente estructura:
 

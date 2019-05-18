@@ -69,8 +69,16 @@ La aplicación me permite agregar los articulos nuevos en formato markdown, para
 
 ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/20.png "Add Article")
 
+# Pruebas de funcionalidad
+## Compartir la sesion de monitoria.
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/Share.gif "Add Article")
+## Editor de codigo en tiempo real.
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/codeEditor.gif "Add Article")
+## Tablero en tiempo real.
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/PaintEditor.gif "Add Article")
+## Adicion de articulos
+![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/Article.gif "Add Article")
 
-# TODO: Hacer bien el modelo y actualizarlo al estado actual del código
 ## Diagrama de clases
 ![](https://raw.githubusercontent.com/alexandrialib/Alexandria/master/Images/ClassDiagram.png "Class Diagram")
 ## Diagrama de componentes

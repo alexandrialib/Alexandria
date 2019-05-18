@@ -206,3 +206,5 @@ El sistema deberá facilitar una alta disponibilidad, el portal será accesible 
 	5. Respuesta: Recurso solicitado o aviso satisfactorio de error (400)
 	6. Medida de la Respuesta: El sistema no muestra errores no planeados o manejados al usuario, solo el 10% de las solicitudes son denegadas.
 
+## Despliegue
+[Demployment](http://alexandria-lib-front.herokuapp.com/)
